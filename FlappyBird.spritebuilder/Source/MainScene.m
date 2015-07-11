@@ -67,7 +67,7 @@
     // Note that the bush ratio is larger than the cloud
     _bushParallaxRatio = ccp(0.9, 1);
     _cloudParallaxRatio = ccp(0.5, 1);
-    
+/*
     for (CCNode *bush in _bushes) {
         CGPoint offset = bush.position;
         [self removeChild:bush];
@@ -79,7 +79,7 @@
         [self removeChild:cloud];
         [_parallaxBackground addChild:cloud z:0 parallaxRatio:_cloudParallaxRatio positionOffset:offset];
     }
-    
+*/
     for (CCNode *ground in _grounds) {
         // set collision txpe
         ground.physicsBody.collisionType = @"level";
